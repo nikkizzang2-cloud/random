@@ -5,12 +5,12 @@
 }
 
 @font-face {
-  font-family: 'Velvelyne';
-  src: url('../fonts/Velvelyne.woff2') format('woff2'),
-       url('../fonts/Velvelyne.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'Velvelyne';
+    src: url('Velvelyne-Light.woff2') format('woff2'),
+        url('Velvelyne-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
 html, body {
@@ -22,7 +22,7 @@ html, body {
 
 body {
   margin-top: 20px;
-  font-family: sans-serif;
+  ont-family: 'Velvelyne', sans-serif;
   font-size: 12pt;
   line-height: 15pt;
   background-color: #ffe9fa;
@@ -34,9 +34,6 @@ body {
   align-items: center;     /* 세로 중앙 */
 
 
-
-
-  font-family: 'Velvelyne', sans-serif;
 
 }
 
