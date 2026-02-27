@@ -6,12 +6,7 @@
 
 
 
-.josefin-slab-<uniquifier> {
-  font-family: "Josefin Slab", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
+
 
 html, body {
   height: 100%;
@@ -155,20 +150,19 @@ td.heart-active::before {
   opacity: 1;    /* 보임 */
 }
 
+.table-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 @media screen and (max-width: 704px) {
 
-  table{
-    width: 90%;
-    height: 90%;   /* 화면 비율에 맞게 */
-  }
-
-  td{
-    width: auto;
-    height: 90px;  /* 높이도 줄이기 */
-    font-size: 10pt;
-    padding: 6px;
+  .table-wrap{
+    transform: scale(0.7);
+    transform-origin: center;
   }
 
 }
