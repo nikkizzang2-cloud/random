@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'Velvelyne';
-    src: url('Velvelyne-Light.woff2') format('woff2'),
-        url('Velvelyne-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+
+
+.josefin-slab-<uniquifier> {
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 html, body {
@@ -22,10 +22,11 @@ html, body {
 
 body {
   margin-top: 20px;
-  ont-family: 'Velvelyne', sans-serif;
+  font-family: 'Josefin Slab', sans-serif;
   font-size: 12pt;
+  font-weight: 700;
   line-height: 15pt;
-  background-color: #ffe9fa;
+  
  cursor: none;
 
   
@@ -50,15 +51,19 @@ table {
   table-layout: fixed; 
    border-collapse: collapse;
 }
+th {
+  font-weight: normal;
+}
 
 .nam
 {border-top: 3px solid black;}
 
 table, tr, td, th {
 
-  color: #97649a;
+  color: #f2855a;
   background-color: ;
-  border: 4px  dotted #97649a;
+  border: 4px solid #97649a;
+
   
 
   padding: 10px;
@@ -148,4 +153,22 @@ td::before {
 
 td.heart-active::before {
   opacity: 1;    /* 보임 */
+}
+
+
+
+@media screen and (max-width: 704px) {
+
+  table{
+    width: 90%;
+    height: 90%;   /* 화면 비율에 맞게 */
+  }
+
+  td{
+    width: auto;
+    height: 90px;  /* 높이도 줄이기 */
+    font-size: 10pt;
+    padding: 6px;
+  }
+
 }
